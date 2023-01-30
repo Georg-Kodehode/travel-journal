@@ -1,0 +1,122 @@
+html,
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.travel-journal {
+  width: 100%;
+}
+
+/* HEADER */
+header {
+  height: 3.4375rem;
+  width: 100%;
+  background-color: #f55a5a;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4375rem;
+}
+.header-text {
+  font-weight: 500;
+  font-size: 0.9038rem;
+  line-height: 1.125rem;
+  letter-spacing: -0.075em;
+}
+
+/* MAIN */
+.main {
+  max-width: 34.375rem;
+  min-width: 21.5625rem;
+  margin: 2.8125rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.1875rem;
+  margin-bottom: 2.25rem;
+}
+.location-wrapper:last-child {
+  margin-bottom: 1.75rem;
+}
+
+.location-image-div {
+  width: 7.8125rem;
+  height: 10.5rem;
+  border-radius: 0.3125rem;
+}
+
+.location-info {
+  max-width: 20.375rem;
+}
+
+.location-map {
+  display: flex;
+  gap: 0.75rem;
+}
+.location-dot-wrapper {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.location-country,
+.google-maps-link,
+.location-date {
+  font-size: 0.64rem;
+  line-height: 0.75rem;
+}
+
+.location-country {
+  margin: 0;
+  letter-spacing: 0.17em;
+  color: #2b283a;
+}
+.google-maps-link {
+  color: #918e9b;
+}
+.google-maps-link:hover,
+.google-maps-link:focus {
+  color: #f55a5a;
+}
+
+.location-title {
+  margin: 0.4375rem 0 0.875rem 0;
+}
+
+.location-date {
+  font-weight: 700;
+  color: #2b283a;
+  margin: 0 0 0.5625rem 0;
+}
+
+.location-description {
+  font-size: 0.64rem;
+  line-height: 0.9375rem;
+  color: #2b283a;
+}
+
+@media only screen and (max-width: 570px) {
+  .location-wrapper {
+    flex-direction: column;
+  }
+  .location-info {
+    order: 1;
+  }
+  .location-image-div {
+    order: 2;
+    width: 100%;
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    /* fallback color: */
+    background-color: black;
+  }
+}
