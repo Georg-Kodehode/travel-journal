@@ -2,8 +2,8 @@
   "name": "travel-journal",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://georg-kodehode.github.io/travel-journal/",
   "type": "module",
+  "homepage": "https://georg-kodehode.github.io/travel-journal/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
